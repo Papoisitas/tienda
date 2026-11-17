@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de accesorios</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>TIENDA DE ACCESORIOS</h1>
+    <h2>Bienvenido a nuestra tienda</h2>
+    <p>
+        Encuentra diferentes accesorios y artículos
+        que tenemos disponibles para ti.
+    </p>
+    <h2>Galería de imágenes</h2>
+    <div class="productos">
+        <div class="articulo">
+            <img src="termo.jpg" alt="Termo">
+        </div>
+        <div class="articulo">
+            <img src="reloj.jpg" alt="Reloj">
+        </div>
+        <div class="articulo">
+            <img src="cartera.jpg" alt="Cartera">
+        </div>
+        <div class="articulo">
+            <img src="lentes.jpg" alt="Lentes">
+        </div>
+        <div class="articulo">
+            <img src="perfume.jpg" alt="Perfume">
+        </div>
+        <div class="articulo">
+            <img src="bolsa.jpg" alt="Bolsa">
+        </div>
+    </div>
+    <h2>Comprar artículos</h2>
+    <form>
+        <label>Termo ($250):</label>
+        <input type="number" id="cantidad1" min="0" value="0">
+        <br><br>
+        <label>Reloj ($450):</label>
+        <input type="number" id="cantidad2" min="0" value="0">
+        <br><br>
+        <label>Cartera ($180):</label>
+        <input type="number" id="cantidad3" min="0" value="0">
+        <br><br>
+        <label>Lentes de sol ($220):</label>
+        <input type="number" id="cantidad4" min="0" value="0">
+        <br><br>
+        <label>Perfume ($380):</label>
+        <input type="number" id="cantidad5" min="0" value="0">
+        <br><br>
+        <label>Bolsa ($320):</label>
+        <input type="number" id="cantidad6" min="0" value="0">
+        <br><br>
+        <button type="button" onclick="comprar()">
+            COMPRAR
+        </button>
+    </form>
+    <h2>Resumen de compra</h2>
+    <p id="total">TOTAL A PAGAR: $0</p>
+    <script src="script.js"></script>
+</body>
+</html>
